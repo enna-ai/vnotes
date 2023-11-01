@@ -6,7 +6,7 @@
 </div>
 <br>
 
-## Installation & Setup
+## Installation
 1. clone repository
 
 ```sh
@@ -19,11 +19,31 @@
   pnpm install
 ```
 
-3. start development server
+## Configure .env Variables
+create a `.env.local` file and configure variables
+
+```
+EDGE_STORE_SECRET_KEY=
+EDGE_STORE_ACCESS_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+NEXT_PUBLIC_CONVEX_URL=
+CONVEX_DEPLOYMENT=
+```
+
+## Setup Convex
+
+```sh
+npx convex dev
+```
+
+## Run
 
 ```sh
   pnpm run dev
 ```
+
+> ensure both convex and client are running
 
 ## At a glance
 <img src="https://i.imgur.com/si8esqG.png" alt="example" width="600">
